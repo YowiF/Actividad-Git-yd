@@ -19,8 +19,8 @@
 
   One of the things you often hear about Git is that you should avoid putting large files into your repository: binaries, media files, archived artifacts, etc. This is because once you add a file, it will always be there in the repo’s history, which means every time the repo is cloned, that huge heavy file will be cloned along with it. And getting a file out of the repo’s history is very tricky, It’s the equivalent of performing a lobotomy on your code base. And this surgical file extraction alters the whole history of the repo, so you no longer have a clear picture of what changes were made and when. All good reasons to avoid large files as a general rule.
 
-  But keeping large files out is especially important if you are doing CI.
-
+  Hemos aprobado diw.
+	
   Each time you build, your CI server has to clone your repo into the working build directory. And if your repo is bloated with a bunch of huge artifacts, it slows that process down and increases the time your developers have to wait for build results.
 
   Ok, fine. But what if your build depends on binaries from other projects or large artifacts? That’s a very common situation, and probably always will be. So the question is: how can we handle it effectively?
